@@ -12,12 +12,11 @@ class ListExamples {
     List<String> result = new ArrayList<>();
     for(String s: list) {
       if(sc.checkString(s)) {
-        result.add(0, s);
+        result.add(s);
       }
     }
     return result;
   }
-
 
   // Takes two sorted list of strings (so "a" appears before "b" and so on),
   // and return a new list that has all the strings in both list in sorted order.
@@ -44,6 +43,12 @@ class ListExamples {
     }
     return result;
   }
-
-
 }
+
+class checker implements StringChecker {
+  @Override
+  public boolean checkString(String s) {
+    return s.length() > 5;
+  }
+}
+
