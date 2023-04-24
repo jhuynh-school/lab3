@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ListTests {
     @Test 
-	public void filterTest() {
+	public void removeOneFilterTest() {
         List<String> lst = new ArrayList<String>();
         lst.add("longestWord");
         lst.add("longWord");
